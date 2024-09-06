@@ -1,0 +1,30 @@
+HOTEL:
+GET http://localhost:8080/hoteis/pesquisar?localizacao=Rio de Janeiro&numeroQuartos=2&numeroHospedes=4
+
+
+GET http://localhost:8080/hoteis/comparar?precoMinimo=100&precoMaximo=500&localizacao=Rio
+
+
+
+Reserva
+POST http://localhost:8080/reservas/fazer
+
+{
+  "hotelId": 1,
+  "usuarioId": 2,
+  "dataCheckIn": "2024-10-10",
+  "dataCheckOut": "2024-10-15",
+  "quartoId": 2,
+  "pagamentoId": 2
+}
+
+
+
+
+
+POST http://localhost:8080/reservas/checkin/1
+
+POST http://localhost:8080/reservas/checkout/1
+
+
+
